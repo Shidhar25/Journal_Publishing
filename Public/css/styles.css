@@ -161,11 +161,35 @@ footer a:hover {
 
 .carousel-item {
     height: 75dvh; /* Adjust the height as needed */
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active.carousel-item-left,
+.carousel-item.active.carousel-item-right {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 .carousel-item img {
     height: 100%;
     object-fit: cover;
+    opacity: 0.4;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.carousel-item.active img {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .carousel-caption {
@@ -173,6 +197,7 @@ footer a:hover {
     right: 10%;
     bottom: 20%;
     text-align: left;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .carousel-caption h5 {
@@ -188,4 +213,15 @@ footer a:hover {
 
 .carousel-indicators .active {
     background-color: #007bff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
