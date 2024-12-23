@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuildSoft Tech</title>
+    <title>
+        BuildSoft Publication
+    </title>
+
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="https://oaskpublishers.com/assets/frontend/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/style.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap00.css">
     <link rel="stylesheet" href="css/bootstrap01.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,9 +34,10 @@
             </button>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#journals">Journals</a></li>
-                <li class="nav-item"><a class="nav-link" href="#submit">Submit Paper</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="journals.html">Journals</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#submit">Submit Paper</a></li>
+                <li class="nav-item"><a class="nav-link" href="guide.html">Guidelines</a></li>
+                <li class="nav-item"><a class="nav-link" href="member.html">Membership</a></li>
                 <li class="nav-item" id="login-link"><a class="nav-link btn text-white" href="login.html">Login</a></li>
                 <li class="nav-item dropdown d-none" id="profile-dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
@@ -44,102 +54,6 @@
             </ul>
         </div>
     </nav>
-    <div class="messageDiv" id="user_account"></div>
-    <!-- Hero Section -->
-    <section id="home" class="hero bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Explore, Publish, and Discover Knowledge</h1>
-            <p class="lead">Find cutting-edge research and showcase your work to the world.</p>
-            <form class="d-flex justify-content-center">
-                <input type="text" class="form-control w-50 me-2" placeholder="Search Journals, Authors, or Topics">
-                <button class="btn btn-dark">Search</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Featured Section -->
-    <section id="featured" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Featured Journals & Papers</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/aiResearch.jpg" class="card-img-top" alt="Journal">
-                        <div class="card-body">
-                            <h5 class="card-title">Journal of AI Research</h5>
-                            <p class="card-text">Explore innovative research in Artificial Intelligence.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/biology.jpg" class="card-img-top" alt="Journal">
-                        <div class="card-body">
-                            <h5 class="card-title">Advances in Biology</h5>
-                            <p class="card-text">Discover groundbreaking studies in the field of biology.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/SurVey.jpg" class="card-img-top" alt="Journal">
-                        <div class="card-body">
-                            <h5 class="card-title">Engineering Innovations</h5>
-                            <p class="card-text">Explore technological advancements and solutions.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Publications Section -->
-    <section id="latest-publications" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Latest Publications</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">The Future of AI and ML</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Author Name</h6>
-                            <p class="card-text">Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Integer posuere erat a ante.</p>
-                            <p class="card-text"><small class="text-muted">Published on: 2023-10-01</small></p>
-                            <a href="#" class="card-link">Read Full Paper</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Mysteries of the Universe</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Author Name</h6>
-                            <p class="card-text">Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Integer posuere erat a ante.</p>
-                            <p class="card-text"><small class="text-muted">Published on: 2023-09-15</small></p>
-                            <a href="#" class="card-link">Read Full Paper</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Building Smarter Solutions</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Author Name</h6>
-                            <p class="card-text">Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Integer posuere erat a ante.</p>
-                            <p class="card-text"><small class="text-muted">Published on: 2023-08-30</small></p>
-                            <a href="#" class="card-link">Read Full Paper</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Paper Submission Section -->
     <section id="submit" class="bg-light py-5">
@@ -655,7 +569,7 @@
     </section>
 
     <!-- Popular Topics Section -->
-    <section id="popular-topics" class="py-5">
+    <!-- <section id="popular-topics" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Popular Research Topics</h2>
             <div class="row">
@@ -689,16 +603,79 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="clients" class="clients section-bg py-5 bg-light">
+        <div class="container">
+            <div class="row aos-init aos-animate" data-aos="zoom-in">
+                <div class="text-center section-title">
+                    <h2 class="title-heading text-uppercase"><b>JOURNAL INDEXING</b></h2>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/GoogleScholar.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/Research_Gate.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/crossref.png" class="img-fluid"
+                        alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/doi.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/issn.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/academia.png" class="img-fluid"
+                        alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/icmje.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/isi.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/SemanticScholar.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/WorldCat.png" class="img-fluid"
+                        alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/drji.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/CiteFactor.png" class="img-fluid"
+                        alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px"
+                        src="https://oaskpublishers.com/assets/frontend/images/clients/Discovery.png" class="img-fluid"
+                        alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/rpri.png"
+                        class="img-fluid" alt=""></div>
+                <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center"> <img
+                        style="height: 120px" src="https://oaskpublishers.com/assets/frontend/images/clients/scilit.png"
+                        class="img-fluid" alt=""></div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <!-- <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2024 MITAOE. All rights reserved.</p>
             <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a>
             </p>
         </div>
-    </footer>
+    </footer> -->
     <!-- <script>
         document.addEventListener('DOMContentLoaded', () => {
             const userEmail = localStorage.getItem('userEmail');
@@ -754,27 +731,32 @@
             const profileName = document.getElementById('profile-name');
             const profileEmail = document.getElementById('profile-email');
             const logoutBtn = document.getElementById('logout-btn');
-    
+
             const userName = localStorage.getItem('userName');
             const userEmail = localStorage.getItem('userEmail');
-    
+
             if (userName && userEmail) {
                 loginLink.classList.add('d-none');
                 profileDropdown.classList.remove('d-none');
                 profileName.textContent = userName;
                 profileEmail.textContent = userEmail;
             }
-    
+
             logoutBtn.addEventListener('click', () => {
                 localStorage.removeItem('userName');
                 localStorage.removeItem('userEmail');
                 window.location.href = 'login.html';
             });
-    
+
             // Initialize Bootstrap dropdown
             $('.dropdown-toggle').dropdown();
         });
     </script>
+    </script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/jquery.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/bootstrap.bundle.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/owl.carousel.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/app.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
