@@ -1,0 +1,19 @@
+{
+  "name": "journal-publishing",
+  "version": "1.0.0",
+  "description": "Navnath Sir's Build Soft Publication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Harshad Gore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
