@@ -9,13 +9,52 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/login.css">
-
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="https://oaskpublishers.com/assets/frontend/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/style.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://oaskpublishers.com/assets/frontend/css/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap00.css">
+    <link rel="stylesheet" href="css/bootstrap01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">BuildSoft Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="journals.html">Journals</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#submit">Submit Paper</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Guidelines</a></li>
+                <li class="nav-item"><a class="nav-link" href="member.html">Membership</a></li>
+                <li class="nav-item" id="login-link"><a class="nav-link btn text-white" href="login.html">Login</a></li>
+                <li class="nav-item dropdown d-none" id="profile-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#" id="profile-name"></a>
+                        <a class="dropdown-item" href="#" id="profile-email"></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" id="logout-btn">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section class="container forms">
         <div class="form login" id="login-form">
             <div class="form-content">
@@ -113,9 +152,45 @@
     </section>
 
     <!-- JavaScript -->
-     
-     <script type="module" src="js/login.js"></script>
-    <script  src="js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginLink = document.getElementById('login-link');
+            const profileDropdown = document.getElementById('profile-dropdown');
+            const profileName = document.getElementById('profile-name');
+            const profileEmail = document.getElementById('profile-email');
+            const logoutBtn = document.getElementById('logout-btn');
+
+            const userName = localStorage.getItem('userName');
+            const userEmail = localStorage.getItem('userEmail');
+
+            if (userName && userEmail) {
+                loginLink.classList.add('d-none');
+                profileDropdown.classList.remove('d-none');
+                profileName.textContent = userName;
+                profileEmail.textContent = userEmail;
+            }
+
+            logoutBtn.addEventListener('click', () => {
+                localStorage.removeItem('userName');
+                localStorage.removeItem('userEmail');
+                window.location.href = 'login.html';
+            });
+
+            // Initialize Bootstrap dropdown
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/jquery.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/bootstrap.bundle.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/owl.carousel.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/app.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="module" src="js/login.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

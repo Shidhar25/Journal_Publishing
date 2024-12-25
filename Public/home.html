@@ -288,36 +288,7 @@
             </div>
         </div>
     </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            if (localStorage.getItem('userLoggedIn') === 'true') {
-                const userEmail = localStorage.getItem('userEmail');
-                const userName = localStorage.getItem('userName');
-                showMessage(`User ${userName} (${userEmail}) logged in successfully!`, 'user_account');
-                localStorage.removeItem('userLoggedIn'); // Remove the flag
-            }
-        });
-
-        function showMessage(info, divID) {
-            var messageDiv = document.getElementById(divID);
-            messageDiv.style.display = 'block';
-            messageDiv.innerHTML = `
-                    <p>${info}</p>
-                    <button id="okay-btn">Okay</button>
-                `;
-            messageDiv.style.opacity = 1;
-
-            document.getElementById('okay-btn').addEventListener('click', () => {
-                messageDiv.style.opacity = 0;
-            });
-
-            setTimeout(function () {
-                if (messageDiv.style.opacity != 0) {
-                    messageDiv.style.opacity = 0;
-                }
-            }, 5000);
-        }
-    </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const loginLink = document.getElementById('login-link');
