@@ -159,7 +159,8 @@ footer a:hover {
 }
 
 .carousel-item {
-    height: 75dvh; /* Adjust the height as needed */
+    height: 75dvh;
+    /* Adjust the height as needed */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -217,11 +218,40 @@ footer a:hover {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
 }
+
 .section-title h2 ::after {
     background: black;
+}
+
+#journals .my_grid li .template-card .details h4 {
+    color: black;
+}
+
+#journals .my_grid li .template-card .details h4:hover {
+    text-decoration: none;
+}
+
+#services .services-blog {
+    border-radius: 20px;
+}
+
+.active {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 4px;
+}
+.nav-link.active:hover{
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 4px;
 }

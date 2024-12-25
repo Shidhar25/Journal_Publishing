@@ -9500,7 +9500,8 @@ fieldset:disabled .btn {
 
 .text-white {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.0), 2px 2px 4px rgba(0, 0, 0, 1.0);
 }
 
 .text-body {
