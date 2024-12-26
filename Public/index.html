@@ -29,7 +29,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="images/logo-icon.png" alt="logo" style="height: 40px; margin-bottom: 5px;">BuildSoft Tech</a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo-icon.png" alt="logo"
+                    style="height: 40px; margin-bottom: 5px;">BuildSoft Tech</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,7 +60,7 @@
     <div class="messageDiv" id="user_account"></div>
 
     <!-- Paper Submission Section -->
-    <section id="submit" class="bg-light py-5">
+    <section id="submit-paper" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">Submit Research Paper</h2>
             <h4>Important Instructions</h4>
@@ -80,12 +81,12 @@
                     Case (Capitalize first character of each words). It's better NOT to write in UPPER CASE.</li>
             </ul>
             <br>
-            <form id="submit-paper-form">
+            <form action="#">
                 <h4 class="highlight-text">Please fill in the details of the research paper.</h4>
                 <br>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <label for="title"><b>Title</b></label>
+                        <label><b>Title</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" id="title" class="form-control" placeholder="Please write in Title Case"
                             required>
@@ -93,7 +94,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <label for="abstract"><b>Abstract</b></label>
+                        <label><b>Abstract</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <textarea id="abstract" class="form-control" rows="3"
                             placeholder="Short background information about the research" required></textarea>
@@ -101,7 +102,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <label for="keywords"><b>Keywords</b></label>
+                        <label><b>Keywords</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" id="keywords" class="form-control"
                             placeholder="Comma separated list (leaving a space after comma would be better)" required>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="research-area"><b>Research Area</b></label>
+                        <label><b>Research Area</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <select name="research-area" class="form-control" id="research-area" required>
                             <option value="" disabled hidden selected>Select</option>
@@ -175,15 +176,16 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="file-upload"><b>Select Research Paper</b></label>
+                        <label><b>Select Research Paper</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
-                        <input type="file" id="file-upload" class="form-control" accept=".docx, .doc, .odt" required>
+                        <input type="file" id="file-upload" class="form-control" accept=".docx, .doc, .odt, .pdf"
+                            required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <label for="message"><b>Message to Editor or Reviewer</b></label>
-                        <textarea id="message" class="form-control" rows="3"
+                        <label><b>Message to Editor or Reviewer</b></label>
+                        <textarea id="message-to-editor" class="form-control" rows="3"
                             placeholder="Message to Editor or Reviewer"></textarea>
                     </div>
                 </div>
@@ -208,66 +210,17 @@
                     <!-- First Author -->
                     <div class="row mb-3">
                         <div class="col-md-1 text-center"><b>1</b></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
+                        <div class="col-md-2"><input id="authorName" type="text" class="form-control"
+                                placeholder="(in Title Case)" required></div>
+                        <div class="col-md-2"><input id="authorDesignation" type="text" class="form-control"
+                                placeholder="(in Title Case)" required></div>
+                        <div class="col-md-3"><input id="authorOrg" type="text" class="form-control"
+                                placeholder="(in Title Case)" required></div>
+                        <div class="col-md-2"><input id="authorEmail" type="email" class="form-control" placeholder=""
                                 required></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
+                        <div class="col-md-2"><input id="authorMobile" type="tel" class="form-control" placeholder=""
                                 required></div>
-                        <div class="col-md-3"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="email" class="form-control" placeholder="" required></div>
-                        <div class="col-md-2"><input type="tel" class="form-control" placeholder="" required></div>
                     </div>
-
-                    <!-- Second Author -->
-                    <div class="row mb-3">
-                        <div class="col-md-1 text-center"><b>2</b></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-3"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="email" class="form-control" placeholder="" required></div>
-                        <div class="col-md-2"><input type="tel" class="form-control" placeholder="" required></div>
-                    </div>
-
-                    <!-- Third Author -->
-                    <div class="row mb-3">
-                        <div class="col-md-1 text-center"><b>3</b></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-3"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="email" class="form-control" placeholder="" required></div>
-                        <div class="col-md-2"><input type="tel" class="form-control" placeholder="" required></div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-1 text-center"><b>4</b></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-3"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="email" class="form-control" placeholder="" required></div>
-                        <div class="col-md-2"><input type="tel" class="form-control" placeholder="" required></div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-1 text-center"><b>5</b></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-3"><input type="text" class="form-control" placeholder="(in Title Case)"
-                                required></div>
-                        <div class="col-md-2"><input type="email" class="form-control" placeholder="" required></div>
-                        <div class="col-md-2"><input type="tel" class="form-control" placeholder="" required></div>
-                    </div>
-
                 </div>
 
                 <!-- Repeat the above row for more authors -->
@@ -276,7 +229,7 @@
                 <h4 class="highlight-text highlight-margin">Address for Communication</h4>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="country"><b>Country</b></label>
+                        <label><b>Country</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <select id="country" name="country" class="form-control" required>
                             <option value="" disabled hidden selected>Select</option>
@@ -533,40 +486,40 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="state"><b>State</b></label>
+                        <label><b>State</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" id="state" class="form-control" placeholder="State" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="city"><b>City</b></label>
+                        <label><b>City</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" id="city" class="form-control" placeholder="City" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="postal-code"><b>Postal Code</b></label>
+                        <label><b>Postal Code</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <input type="text" id="postal-code" class="form-control" placeholder="Postal Code" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <label for="address"><b>Address</b></label>
+                        <label><b>Address</b></label>
                         <span style="color: red !important; display: inline; float: none;">*</span>
                         <textarea id="address" class="form-control" rows="3"
                             placeholder="Address (without Country, State/Region/Province, District/City and Postal Code)"
                             required></textarea>
                     </div>
                 </div>
-                <span>
+                <!-- <span>
                     <input type="checkbox" name="t-n-c" id="t-n-c" required="">
-                    <label for="t-n-c" class="margin-t-3x" style="top:2px">I am agree with the</label>
+                    <label class="margin-t-3x" style="top:2px">I am agree with the</label>
                     <a href="site-policies.php" target="_blank" title="Opens in new window"
                         style="top:2px">journal/website's policies</a>
-                </span>
+                </span> -->
                 <br>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit-form" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
@@ -697,6 +650,64 @@
             }
         });
     </script> -->
+
+    <script>
+        document.getElementById('submit-form').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const fileInput = document.getElementById('file-upload');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert("Please upload a file!");
+                return;
+            }
+
+            // Read the file and encode it in Base64
+            const reader = new FileReader();
+            reader.onload = function () {
+                const fileBase64 = reader.result.split(",")[1]; // Get Base64 content
+
+                const formData = {
+                    username: localStorage.getItem('userName'),
+                    title: document.getElementById('title').value,
+                    abstract: document.getElementById('abstract').value,
+                    keywords: document.getElementById('keywords').value,
+                    researchArea: document.getElementById('research-area').value,
+                    message: document.getElementById('message-to-editor').value,
+                    authName: document.getElementById('authorName').value,
+                    designation: document.getElementById('authorDesignation').value,
+                    organization: document.getElementById('authorOrg').value,
+                    authEmail: document.getElementById('authorEmail').value,
+                    authMobile: document.getElementById('authorMobile').value,
+                    country: document.getElementById('country').value,
+                    state: document.getElementById('state').value,
+                    city: document.getElementById('city').value,
+                    postalCode: document.getElementById('postal-code').value,
+                    address: document.getElementById('address').value,
+                    fileName: file.name,
+                    fileType: file.type,
+                    fileBase64: fileBase64,
+                };
+
+                fetch("https://script.google.com/macros/s/AKfycbxRyZtkSVK9kHxY7cJtxyMAVNhp-vldgWFaX3cTTW8LQJ82lg_klC3W_u5MHxU6KsLqFg/exec", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(formData),
+                    mode: 'no-cors'
+                })
+                .then((response) => {
+                    console.log("Request sent successfully");
+                })
+                .catch((error) => console.error("Error:", error));
+            };
+
+            reader.readAsDataURL(file); // Convert the file to Base64
+        });
+
+    </script>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             if (localStorage.getItem('userLoggedIn') === 'true') {
@@ -756,14 +767,14 @@
         });
     </script>
     </script>
-    <script src="https://oaskpublishers.com/assets/frontend/js/jquery.min.js"></script>
+    <!-- <script src="https://oaskpublishers.com/assets/frontend/js/jquery.min.js"></script>
     <script src="https://oaskpublishers.com/assets/frontend/js/bootstrap.bundle.min.js"></script>
     <script src="https://oaskpublishers.com/assets/frontend/js/owl.carousel.min.js"></script>
-    <script src="https://oaskpublishers.com/assets/frontend/js/app.min.js"></script>
+    <script src="https://oaskpublishers.com/assets/frontend/js/app.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
 </body>
 
 </html>

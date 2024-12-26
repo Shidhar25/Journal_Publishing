@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors'); // Import the cors middleware
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Serve static files from the "Public" directory
 app.use(express.static(path.join(__dirname, 'Public')));
