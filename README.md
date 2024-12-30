@@ -1,29 +1,19 @@
-Directory structure:
-└── Harshad-Gore-Journal_Publishing/
-    ├── .github/
-    │   └── workflows/
-    │       └── jekyll-gh-pages.yml
-    ├── server.js
-    ├── package.json
-    ├── Public/
-    │   ├── index.html
-    │   ├── home.html
-    │   ├── login.html
-    │   ├── images/
-    │   ├── member.html
-    │   ├── journals.html
-    │   ├── css/
-    │   │   ├── bootstrap02.css
-    │   │   ├── bootstrap00.css
-    │   │   ├── styles.css
-    │   │   ├── bootstrap01.css
-    │   │   └── login.css
-    │   ├── guide.html
-    │   └── js/
-    │       ├── bootstrap.js
-    │       ├── login.js
-    │       └── script.js
-    └── app.mjs
+# Project Directory Structure
+
+The project directory is organized as follows:
+
+
+---
+
+### Notes on Structure
+
+- **`.github/workflows/`:** Contains GitHub Actions configuration for automating tasks such as deployment.
+- **`server.js`:** Entry point of the Node.js server.
+- **`Public/`:** Contains static files, including HTML, CSS, JavaScript, and images.
+- **`app.mjs`:** Core application logic written in modern ES Module syntax.
+- **`package.json`:** Defines dependencies, scripts, and project metadata.
+
+This structure helps in organizing the project for scalability and maintainability. 
 
     
 # Journal Publishing
