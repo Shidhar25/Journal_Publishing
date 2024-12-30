@@ -31,7 +31,6 @@ function showMessage(info, divID) {
         <button id="okay-btn">Okay</button>
     `;
     messageDiv.style.opacity = 1;
-
     document.getElementById('okay-btn').addEventListener('click', () => {
         messageDiv.style.opacity = 0;
     });
@@ -153,14 +152,14 @@ document.getElementById("submit-form").addEventListener('click', function (e) {
         authorEmail: document.getElementById('authorEmail').value,
         authorMobile: document.getElementById('authorMobile').value
     })
-    .then(() => {
-        alert('Data submitted successfully');
-    })
-    .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.error('Error code:', errorCode);
-        console.error('Error message:', errorMessage);
-        alert('Error: ' + errorMessage);
-    });
+        .then(() => {
+            alert('Data submitted successfully');
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.error('Error code:', errorCode);
+            console.error('Error message:', errorMessage);
+            alert('Error: ' + errorMessage);
+        });
 });
